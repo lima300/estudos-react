@@ -16,12 +16,13 @@ import DiretaPai from './components/comunicacao/DiretaPai.jsx';
 import IndiretaPai from './components/comunicacao/IndiretaPai.jsx';
 import Input from './components/formulario/Input.jsx';
 import Contador from './components/contador/Contador.jsx';
+import Mega from './components/mega/Mega.jsx';
 
 export default (props) => {
   function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
-    for (let i = 0; i < 6; i += 1) {
+    for (let i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -31,6 +32,10 @@ export default (props) => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#13 - Megasena" color={getRandomColor()}>
+          <Mega qtd={6}></Mega>
+        </Card>
+
         <Card titulo="#12 - Contador" color={getRandomColor()}>
           <Contador numeroInicial={10}></Contador>
         </Card>

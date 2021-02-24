@@ -20,7 +20,7 @@
     "consistent-return": "off",
     "no-param-reassign": "off",
     "camelcase": "off",
-    "no-unused-vars": "off"
-
+    "no-unused-vars": "off",
+    "no-plusplus": "off"
   }
 }
